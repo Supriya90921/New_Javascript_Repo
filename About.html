@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supriya | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Typing animation */
+    .typewriter {
+      font-weight: 600;
+      color: #2563eb;
+      border-right: 3px solid #2563eb;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center px-6">
+      <h1 class="text-2xl font-bold text-blue-600">Supriya<span class="text-gray-800">.Portfolio</span></h1>
+      <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-24 bg-gradient-to-b from-blue-50 to-white">
+    <h1 class="text-5xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-600">Supriya</span></h1>
+    <h2 class="text-2xl mt-2 text-gray-700"><span class="typewriter" id="typing"></span></h2>
+    <p class="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+      A passionate developer who transforms innovative ideas into elegant, functional web experiences.
+    </p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="py-20 bg-gradient-to-b from-gray-50 to-white text-center" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800">About Me</h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-6">
+        Hi, I’m <span class="font-semibold text-blue-600">Supriya</span> — a creative Front-End Developer 
+        skilled in <span class="text-gray-800 font-medium">HTML, CSS, JavaScript, and Angular</span>.  
+        I enjoy crafting clean, responsive designs with modern, interactive features.
+      </p>
+      <p class="text-gray-600 leading-relaxed">
+        Currently exploring <span class="font-medium">AI/ML</span> and <span class="font-medium">IoT</span> concepts, 
+        I aim to blend innovation with usability to deliver meaningful digital experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-100" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Skills</h2>
+      <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-8 text-center">
+        <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-2">HTML5</h3>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-2">CSS3</h3>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+        </div>
+        <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-2">Angular</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-white" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-10 text-gray-800">Projects</h2>
+      <div class="grid md:grid-cols-3 sm:grid-cols-1 gap-8">
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-3 text-blue-600">Mumento Photography</h3>
+          <p class="text-gray-600">
+            A modern photography website with category cards, smooth carousel transitions, and elegant layout.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-3 text-blue-600">DeliverIt</h3>
+          <p class="text-gray-600">
+            An e-commerce platform for daily essentials with product cards, footer links, and category filters.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+          <h3 class="text-xl font-semibold mb-3 text-blue-600">Basal Classes</h3>
+          <p class="text-gray-600">
+            Educational website for IIT JEE and NEET batches, designed for responsiveness and clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gray-100" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800">Contact Me</h2>
+      <p class="text-gray-600 mb-8">
+        Let’s connect and create something amazing together!  
+        I’m open to projects, collaborations, or friendly conversations.
+      </p>
+      <form class="max-w-md mx-auto">
+        <input type="text" placeholder="Your Name" class="w-full mb-4 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="email" placeholder="Your Email" class="w-full mb-4 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <textarea placeholder="Your Message" rows="4" class="w-full mb-4 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-600 border-t">
+    © 2025 Supriya. All rights reserved.
+  </footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+  <!-- Typewriter JS -->
+  <script>
+    const roles = ["Front-End Developer", "AI/ML Enthusiast", "IoT Thinker"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    const typingElement = document.getElementById("typing");
+
+    function typeEffect() {
+      if (charIndex < roles[roleIndex].length) {
+        typingElement.textContent += roles[roleIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect, 100);
+      } else {
+        setTimeout(eraseEffect, 1500);
+      }
+    }
+
+    function eraseEffect() {
+      if (charIndex > 0) {
+        typingElement.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseEffect, 50);
+      } else {
+        roleIndex = (roleIndex + 1) % roles.length;
+        setTimeout(typeEffect, 300);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => typeEffect());
+  </script>
+</body>
+</html>
